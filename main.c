@@ -63,7 +63,7 @@ int main(int argc, char **argv) {
   }
   unsigned int options = 0;
   int res = CGSGetDebugOptions(&options);
-  printf("CGSGetDebugOptions(%p) = 0x%x\n",&options,res);
+  printf("CGSGetDebugOptions(%p) = %d\n",&options,res);
   printf("options = 0x%x\n",options);
   if(!strncmp(argv[1],"-e",2)) {
     options &= (~disableBeamSyncFlag);
@@ -80,8 +80,8 @@ int main(int argc, char **argv) {
     return 1;
   }
   res = CGSSetDebugOptions(options);
-  printf("CGSSetDebugOptions(0x%x) = 0x%x\n",options,res);
+  printf("CGSSetDebugOptions(0x%x) = %d\n",options,res);
   res = CGSDeferredUpdates(mode);
-  printf("CGSDeferredUpdates(0x%x) = 0x%x\n",mode,res);
+  printf("CGSDeferredUpdates(0x%x) = %d\n",mode,res);
   return 0;
 }
