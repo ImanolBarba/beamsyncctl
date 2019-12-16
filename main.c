@@ -1,5 +1,5 @@
 /***************************************************************************
- *   main.cpp  --  This file is part of beamsyncctl.                       *
+ *   main.c  --  This file is part of beamsyncctl.                         *
  *                                                                         *
  *   Copyright (C) 2019 Imanol-Mikel Barba Sabariego                       *
  *                                                                         *
